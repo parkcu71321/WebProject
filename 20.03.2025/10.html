@@ -1,0 +1,22 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <audio src="medias/Kalimba.mp3" controls autoplay loop></audio>            <!--controls : 재생바 및 조작키 띄움, autoplay : 자동재생, loop : 반복 재생-->
+
+        <audio controls>        <!--audio는 controls라는 속성 필요요-->
+            <source src="medias/Kalimba.mp3" type="audio/mp3">
+            <source src="medias/Kalimba.ogg" type="audio/ogg">
+            <p>이 브라우저는 audio를 지원하지 않습니다다</p>
+        </audio><br>
+
+        <video controls poster="medias/말.png">
+            <source src="medias/Wildlife.mp4" type="video/mp4">
+            <source src="medias/Wildlife.webm" type="video/webm">
+            <p>이 브라우저는 video를 지원하지 않습니다다</p>
+        </video>
+    </body>
+</html>
