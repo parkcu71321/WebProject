@@ -1,0 +1,16 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>post 전송 방식</title>
+    </head>
+    <body>
+        <form action="../20.03.2025/02.html" method="post">
+            <!--post 방식: 폼에 입력된 내용을 브라우저 헤더에 저장해서 전달달, 용량 제한x-->        
+            <!-- action 태그는 폼 데이터를 서버(url)로 보낼 때 데이터가 도착할 url 명시-->
+            <!--현재 url은 상대경로로 표기됨(상대경로가 이식하기 쉽다), 절대경로 = /20.03.2025/02.html-->
+            <input type="text" name="username" placeholder="입력하세요">          <!-- text라는 칸을 만들고, 이름을 search로 지정. 칸에 입력하세요로 미리 나타냄-->
+            <input type="submit" value="가입">       <!-- submit : 해당 데이터를 url로 전송, button : 입력 됐는지 확인용, reset : 입력된 값이 지워짐 --><!--value : 초기값값-->
+        </form>
+    </body>
+</html>

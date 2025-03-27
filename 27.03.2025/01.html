@@ -2,12 +2,15 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>입력 양식 태그</title>
+        <title>get 전송 방식</title>
     </head>
     <body>
-        <form>
-            <input type="text" name="search">
-            <input type="sumbit">
+        <form action="../20.03.2025/01.html" method="get">
+            <!--get 방식 : 주소에 데이터를 입력해서 전달, 크기가 한정됨-->        
+            <!-- action 태그는 폼 데이터를 서버(url)로 보낼 때 데이터가 도착할 url 명시-->
+            <!--현재 url은 상대경로로 표기됨(상대경로가 이식하기 쉽다), 절대경로 = /20.03.2025/01.html-->
+            <input type="text" name="search" placeholder="입력하세요">          <!-- text라는 칸을 만들고, 이름을 search로 지정. 칸에 입력하세요로 미리 나타냄-->
+            <input type="submit" value="제출">       <!-- submit : 해당 데이터를 url로 전송, button : 입력 됐는지 확인용, reset : 입력된 값이 지워짐 --><!--value : 초기값값-->
         </form>
     </body>
 </html>
