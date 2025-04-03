@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>선택 가능한 입력 양식</title>
+    </head>
+    <body>
+        <form action="../27.03.2025/01.html" method="get">
+            <table>
+                <tr>
+                    <td>
+                        <label for="username">이름 :</label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" id="username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>성별 :</td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="m">      <!-- radio는 둘 중 하나의 값만 선택할 수 있기 때문에 그룹화를 해야함(name을 같게게)-->
+                        <label for="male">남성</label>
+                        <input type="radio" name="gender" id="woman" value="w">
+                        <label for="woman">여성</label>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2">
+                        <button type="submit" value="제출">가입</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
