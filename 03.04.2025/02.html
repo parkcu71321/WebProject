@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <mata charset="utf-8">
+        <title>입력 양식 그룹으로 묶기</title>
+    </head>
+    <body>
+        <form action="01.html" method="get">
+            <fieldset>
+                <legend>입력 양식</legend>
+                <table>
+                    <tr>
+                        <td>이름 :</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>이메일 :</td>
+                        <td><input type="email"></td>
+                    </tr>
+                    <tr>
+                        <td>남기고 싶은 말 :</td>
+                        <td><textarea name="comment" cols="20" rows="10">상세 주소 입력</textarea></td>          <!-- textarea에서 name은 보내지는 데이터의 이름, 상세주소입력은 미리 적혀져서 나옴옴-->
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="가입">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>
