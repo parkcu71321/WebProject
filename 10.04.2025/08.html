@@ -1,0 +1,22 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>구조 선택자에서 실수 할 수 있는 부분</title>
+    </head>
+    <style>
+        li:last-child>a{
+            color:red;
+        }
+        li >a:first-child{}
+    </style>
+    <body>
+        <ul>
+            <li>**<a href="#">첫 번째 주의사항</a></li>
+            <li>**<a href="#">두 번째 주의사항</a></li>
+            <li>**<a href="#">세 번째 주의사항</a></li>
+            <li>**<a href="#">네 번째 주의사항</a></li>
+            <li>**<a href="#">다섯 번째 주의사항</a></li>
+        </ul>
+    </body>
+</html>
