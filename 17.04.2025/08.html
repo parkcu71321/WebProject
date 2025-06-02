@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>글자 크기와 글꼴</title>
+        <style>
+            .a{
+                font-size:32px;             /*절대 단위*/
+                font-family: Arial, Helvetica, sans-serif;          /*앞에 있는 게 우선순위가 높다*/
+            }
+            .b{
+                font-size:2em;              /*기본 사이즈의 2배*/
+                font-family: 'Times New Roman', Times, serif;       /*앞에 있는 게 우선순위가 높다*/
+            }
+            .c{
+                font-size:large;            /*기본 폰트의 상대 단위*/
+            }
+            .d{
+                font-size:small;            /*기본 폰트(16px)의 상대 단위*/
+            }
+            .font_big{
+                font-size:3em;
+            }
+            .font_italic{
+                font-style:italic;
+            }
+            .font_bold{
+                font-weight:bold;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> hi </h1>
+        <p class="a"> hi </p>
+        <p class="b"> hi </p>
+        <p class="c"> hi </p>
+        <p class="d"> hi </p>
+        <p class="font_big font_italic font_bold">lorem ipsum dolor</p>     <!-- 다수의 클래스를 입력 할 때 공백이 필요하다-->
+
+    </body>
+</html>

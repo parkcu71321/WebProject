@@ -1,0 +1,62 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>글자 크기와 글꼴</title>
+        <style>
+            
+            .font_big{
+                font-size:3em;
+            }
+            .font_italic{
+                font-style:italic;
+            }
+            .font_bold{
+                font-weight:bold;
+                text-align:center;
+            }
+            .font_center{
+                text-align: center;
+            }
+            .font_right{
+                text-align: right;
+            }
+            .button{
+                width:150px;
+                height:70px;
+                background-color:orange;
+                border: 10px solid blue;
+                border-radius: 30px;
+                box-shadow:5px 5px 5px gray;
+                
+            }
+            .button > a{
+                display:block;
+                line-height: 70px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <p class="font_big font_italic font_bold font_center">lorem ipsum dolor</p>     <!-- 다수의 클래스를 입력 할 때 공백이 필요하다-->
+        <p class="font_bold font_right">2025.04.17</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Suspendisse mi neque, convallis ac libero luctus, lacinia tincidunt neque. 
+            Nulla id lacinia eros. Fusce nec diam a dui sollicitudin tincidunt. Nullam eget mauris tortor. 
+            Curabitur aliquet molestie nulla, quis fermentum nulla. Vestibulum id scelerisque eros.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Suspendisse mi neque, convallis ac libero luctus, lacinia tincidunt neque. 
+            Nulla id lacinia eros. Fusce nec diam a dui sollicitudin tincidunt. Nullam eget mauris tortor. 
+            Curabitur aliquet molestie nulla, quis fermentum nulla. Vestibulum id scelerisque eros.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Suspendisse mi neque, convallis ac libero luctus, lacinia tincidunt neque. 
+            Nulla id lacinia eros. Fusce nec diam a dui sollicitudin tincidunt. Nullam eget mauris tortor. 
+            Curabitur aliquet molestie nulla, quis fermentum nulla. Vestibulum id scelerisque eros.
+        </p>
+
+        
+        <div class="button font_center">
+            <a href="#" class="font_big font_italic">Click</a>          <!-- a 태그는 인라인 형식-->
+        </div>
+    </body>
+</html>

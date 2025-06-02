@@ -1,0 +1,28 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>클래스 선택자 연습</title>
+        <style>
+            .red{
+                color:red;
+                
+            }
+            .yellow{
+                background-color:aqua;
+            }
+            li.select{                  
+                color:blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="select">클래스 선택자 연습</h1>
+        <ul>
+            <li class="red yellow">오렌지</li>         <!-- li도 인라인이 아니라 블럭(div랑 같은 영역)이다-->
+            <li class="select">딸기</li>
+            <li class="red">바나나</li>
+            <li>수박</li>
+        </ul>
+    </body>
+</html>

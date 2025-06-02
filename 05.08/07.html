@@ -1,0 +1,19 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>글자생략</title>
+        <style>
+            #ellipsis{
+                width:400px;
+                white-space:nowrap;         /*줄바꿈 하지 않음*/
+                overflow:hidden;            /*넘치는 부분을 안 보여줌*/
+                text-overflow:ellipsis;     /*넘치는 부분을 축약으로 표현함*/
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="ellipsis">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>
+        <p id="ellipsis">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+    </body>
+</html>

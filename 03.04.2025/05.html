@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>아이디 선택자</title>
+        <style>
+            #header
+            {
+                width: 900px;
+                margin: 0 auto;
+                background-color:red;
+            }
+            #wrap
+            {
+                width: 800px;          /* id=wrap 내 후손들 중 width가 800보다 크면 넘어가는 부분을 안 보이게 해준다(overflow:hidden 때문에에)*/
+                margin: 0 auto;
+                overflow:hidden;
+            }
+            #aside
+            {
+                width: 200px;           
+                float:left;
+                background-color:blue;
+            }
+            #content
+            {
+                width: 1000px;
+                float:left;
+                background-color:green;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>header 아이디 선택자자</h1>
+        </div>
+        <div id="wrap">
+            <div id="aside">
+                <h1>aside 아이디 선택자자</h1>
+            </div>
+            <div id="content">
+                <h1>content 아이디 선택자자</h1>
+            </div>
+        </div>
+    </body>
+</html>
