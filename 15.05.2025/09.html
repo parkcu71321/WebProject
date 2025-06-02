@@ -1,0 +1,28 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <script>
+            let weight=65;
+            var height=184;
+            let bmi=weight/Math.pow(height/100,2);
+            var result="";
+
+            if(bmi<18.5)
+                result='저';
+            else if(bmi<22.9)
+                result="정상"
+            else if(bmi<29.9)
+                result="과"
+            else if(bmi<34.9)
+                result="비만"
+            else
+                reslut="고도 비만"
+
+            alert("당신의 BMI는 "+bmi.toFixed(2)+"입니다"+"\n귀하는 "+result+"입니다");
+        </script>
+    </body>
+</html>

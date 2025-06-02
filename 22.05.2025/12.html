@@ -1,0 +1,28 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+
+        <script>
+            function changeStyle(){
+                let c=document.getElementById("t1");
+                c.style.color="red";
+                c.style.backgroundColor="black";
+                c.innerHTML="molly";
+            }
+
+            function resetStyle(){
+                let c=document.getElementById("t1");
+                c.style.color="black";
+                c.style.backgroundColor="white";
+                c.innerHTML="holly";
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="t1">holly</h1>
+        <button onclick="changeStyle()">change</button>
+        <button onclick="resetStyle()">reset</button>
+    </body>
+</html>

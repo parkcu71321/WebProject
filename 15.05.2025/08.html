@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScriptBasic</title>
+    </head>
+    <body>
+        <script>
+            var date=new Date();            //Date 객체를 힙 메모리에 생성해 그 주소값을 date 안에 넣는다.
+
+            let year=date.getFullYear();
+            let month=(date.getMonth()+1);              //getMonth에서 1월은 0이다.
+            let day=date.getDate();
+            let hour=date.getHours();
+            let min=date.getMinutes();
+            let sec=date.getSeconds();
+
+            alert("현재 날짜: "+year+"년 "+month+"월 "+day+"일 "+hour+"시 "+min+"분 "+sec+"초 ");
+
+            if(hour>12)
+                alert('지금은 오후입니다.');
+            else
+            {
+                if(hour==0){
+                    hour-=12;
+                }
+                alert("지금은 오전입니다.");
+            }
+        </script>
+    </body>
+</html>

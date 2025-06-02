@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <div>
+            <input type="button" value="그라데이션 넣기" onclick="changeOn()">
+        </div>
+        
+        <script>
+           function changeOn(){
+                let array="";
+                for(var i=0; i<256; i++){
+                    array=array+'<div></div>'
+                }
+                document.body.innerHTML=array;              //body안에 있는 모든 html요소들이 array로 바뀐다. 즉 div로 바뀜
+
+                let divs=document.querySelectorAll("div");
+
+                for(let i=0; i<divs.length; i++){
+                    divs[i].style.height="2px";
+                    divs[i].style.backgroundColor="rgb("+i+","+i+","+i+")"
+                }
+           }
+        </script>
+    </body>
+</html>

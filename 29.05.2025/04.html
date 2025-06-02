@@ -1,0 +1,57 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body  onload="CallSetClock()">
+        <script>
+            let img;
+            function come(){
+                img=document.getElementById("img1");
+                var pic=select.value;
+                img.src=pic;
+                img.width=600;
+            }
+
+            function out(){
+                img.src="";
+                img.width="0";
+            }
+
+            function cheer(){
+                document.body.setAttribute("data-응원", "Skr");
+                alert(document.body.getAttribute("data-응원"));
+            }
+
+            function setClock(){
+                let now=new Date();
+                
+                clock.innerHTML=now.toString();
+            }
+            let clock;
+            function CallSetClock(){
+                clock=document.querySelector("h1");
+                setClock();
+                setInterval(setClock,1000);
+            }
+        </script>
+
+        <input type="button" value="이미지 출력" onclick="come()">
+        <button onclick="out()">이미지 리셋</button>
+        <button onclick="cheer()">응원</button>
+
+        <br>
+
+        <select id="select">
+            <option value="images/야말.webp">yamal</option>
+            <option value="images/하피냐.webp">hapiny</option>
+        </select>
+
+        <img id="img1">
+
+        <br>
+
+        <h1></h1>
+    </body>
+</html>

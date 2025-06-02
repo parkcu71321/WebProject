@@ -1,0 +1,25 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script>
+            let color=['red','blue','black'];
+            let bgcolor=['yellow','green','orange']
+            let text=['박','찬','웅'];
+            function changeStyle(){
+                let t1=document.querySelectorAll("h1");
+                for(let i=0; i<t1.length; i++){
+                    t1[i].style.backgroundColor=bgcolor[i];
+                    t1[i].style.color=color[i];
+                    t1[i].innerHTML=text[i];
+                }
+            }
+        </script>
+    </head>
+    <body onload="changeStyle()">
+        <h1>hi</h1>
+        <h1>bye</h1>
+        <h1>ho</h1>
+    </body>
+</html>
