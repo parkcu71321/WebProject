@@ -1,0 +1,21 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
+    <body>
+        <script>
+            $(document).ready(
+                function(){
+                    let src=$("script").attr("src");
+                    alert("현재 스크립트 파일의 경로: "+src);
+                    $('h1').css("color","yellow");
+                    $('h1').css("background-color","black");
+                }
+            );
+        </script>
+        <h1>안녕하세요</h1>
+    </body>
+</html>

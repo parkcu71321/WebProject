@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <script>
+            function callAlert(){
+                alert("알림 메세지");
+            }
+            
+            
+            function imgover(){
+                document.getElementById("image").src="images/하피냐.webp";
+            }
+
+            function imgout(img1){
+                img1.src="images/야말.webp";
+            }
+
+            
+            function imgout1(){
+                let pic=document.getElementById("image1");
+                pic.src="images/하피냐.webp";
+            }
+
+
+            function accumulate(btn){
+                btn.textContent = btn.textContent+"*";
+            }
+        </script>
+        <button onclick="callAlert()">알림 메세지</button>
+        <br>
+        <button onclick="accumulate(this)">이미지 - </button>
+        <br>
+        <img src="images/뎀벨레.webp" id="image" onmouseover="imgover()" onmouseout="imgout(this)">
+        <br>
+        <img src="images/뎀벨레.webp" id="image1" onmouseover="this.src='images/야말.webp'" onmouseout="imgout1()">
+    </body>
+</html>
