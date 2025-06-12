@@ -1,0 +1,38 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
+    <body>
+        <script>
+            $(document).ready(
+                function(){
+                    $("h1").hover(
+                        function(){
+                            $(this).css(                //this: 현재 사용되는 걸 뜻함
+                                {
+                                    color:"white",
+                                    backgroundColor:"red"
+                                }
+                            );
+                        },
+                        function(){
+                            $("h1").css(
+                                {
+                                    color:"",
+                                    backgroundColor:""
+                                }
+                            );
+                        }
+                    );
+                },
+                function(){
+
+                }
+            );
+        </script>
+        <h1>Hober over the box</h1>
+    </body>
+</html>
