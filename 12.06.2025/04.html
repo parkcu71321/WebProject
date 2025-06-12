@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <style>
+            #box{
+                width:100px;
+                height:100px;
+                background-color:red;
+            }
+            #box.hover{                     /*id가 box이면서 class가 hover인 거*/
+                background-color:blue;
+                border-radius: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            $(document).ready(
+                function(){
+                    $("#box").hover(function(){
+                        $("#box").addClass("hover");
+                    },function(){
+                        $("#box").removeClass("hover");
+                    });
+                }
+            );
+        </script>
+        <div id="box"></div>
+    </body>
+</html>
