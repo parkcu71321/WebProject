@@ -1,0 +1,28 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
+    <body>
+        <script>
+            $(document).ready(
+                function()
+                {
+                    $(".effect").click(
+                        function(){
+                            $(".div1").fadeIn('fast');
+                        }
+                    );
+                }
+            );
+        </script>
+        <button class="effect">Visual Effect</button>
+        <br>
+        <div class="div1" style="display:none">         <!-- fadeIn은 나타나는 거기 때문에 처음에 display none 처리 해야됨-->
+            <h1>Holly mamamama papa 내 두 눈으로 봤어요</h1>
+            <p>세차게 담았는데 왜 또 비어 있나요</p>
+        </div>
+    </body>
+</html>
