@@ -1,0 +1,24 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
+    <body>
+        <script>
+            $(document).ready(
+                function()
+                {
+                    $("a1").click(
+                        function(event){
+                            alert("링크 클릭");
+                            event.preventDefault();     //event의 기본 동작을 막는다.
+                        }
+                    );
+                }
+            );
+        </script>
+        <a href="https://www.naver.com/" id="a1">Naver</a>
+    </body>
+</html>
